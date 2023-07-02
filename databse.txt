@@ -1,0 +1,15 @@
+create table model(model_id int AUTO_INCREMENT PRIMARY key,model_name varchar(200),model_status varchar(100));
+INSERT INTO `model`(`model_name`, `model_status`) VALUES ('slips','active');
+INSERT INTO `model`(`model_name`, `model_status`) VALUES ('Brasieres','active');
+INSERT INTO `model`(`model_name`, `model_status`) VALUES ('Night Dress','active');
+CREATE TABLE colors(color_id int AUTO_INCREMENT primary key,color_name varchar(100),color_hexvalue varchar(100),color_status varchar(100));
+create table sizechart(size_id int AUTO_INCREMENT PRIMARY KEY,size_label varchar(100),size_rank varchar(10));
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('S','1');
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('M','2');
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('L','3');
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('XL','4');
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('XXL','5');
+INSERT INTO `sizechart`(`size_label`, `size_rank`) VALUES ('XXXL','6');
+CREATE table product(product_id int AUTO_INCREMENT PRIMARY KEY,product_name varchar(850),product_description varchar(1250),status varchar(250),model_id int,model_name varchar(650),colors_available varchar(600),available_size varchar(1000),sizetype varchar(100),price varchar(2000),attachments varchar(5000),timestamp varchar(100));
+create table admin_details(id int AUTO_INCREMENT primary key,email varchar(500),password varchar(200),name varchar(200));          
+INSERT INTO `admin_details`( `email`, `password`,`name`) VALUES ("admin","123","admin");
