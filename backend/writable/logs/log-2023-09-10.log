@@ -1,0 +1,132 @@
+CRITICAL - 2023-09-10 12:08:59 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-10 12:08:59 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-10 12:09:06 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 246.
+ 1 SYSTEMPATH\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-09-10 12:09:06 --> Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Debug\ExceptionHandler.php(78): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Debug\Exceptions.php(146): CodeIgniter\Debug\ExceptionHandler->handle(Object(CodeIgniter\Exceptions\FrameworkException), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#6 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\FrameworkException
+The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(246): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(210): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\spark(88): CodeIgniter\CodeIgniter->initialize()
+#3 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-10 10:35:56 --> Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Models.php(22): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:35:58 --> Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Models.php(22): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:39:51 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:39:53 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:40:45 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:40:51 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:40:55 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:40:56 --> Undefined variable $db
+in APPPATH\Controllers\Models.php on line 37.
+ 1 APPPATH\Controllers\Models.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:41:59 --> Undefined variable $conn
+in APPPATH\Controllers\Models.php on line 13.
+ 1 APPPATH\Controllers\Models.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-10 10:42:00 --> Undefined variable $conn
+in APPPATH\Controllers\Models.php on line 13.
+ 1 APPPATH\Controllers\Models.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conn', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Models.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')

@@ -1,0 +1,936 @@
+ERROR - 2023-09-16 08:12:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:12:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(*) as countl from admin_details where email=\'admin\' and password =\'123\'')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 08:12:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Models->index()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Models->index()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:12:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM model')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 08:13:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:13:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(*) as countl from admin_details where email=\'admin\' and password =\'123\'')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 08:27:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:27:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(*) as countl from admin_details where email=\'admin\' and password =\'123\'')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 08:29:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:29:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(*) as countl from admin_details where email=\'admin\' and password =\'123\'')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 08:31:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'sadhana', 3306, '', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-09-16 08:31:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Admin.php(115): CodeIgniter\Database\BaseConnection->query('SELECT *,count(*) as countl from admin_details where email=\'admin\' and password =\'123\'')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 08:32:13 --> Undefined variable $query
+in APPPATH\Controllers\Admin.php on line 115.
+ 1 APPPATH\Controllers\Admin.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Admin.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Admin->validateform()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 08:57:30 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\Colors.php(77): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Colors->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Colors))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:21:07 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:22:05 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:22:36 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:23:06 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:23:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:24:27 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:39:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 46.
+ 1 APPPATH\Controllers\Product.php(46): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:39:25 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 46.
+ 1 APPPATH\Controllers\Product.php(46): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:40:58 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Product.php on line 71.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Product')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Product')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Product', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:40:59 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Product.php on line 71.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Product')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Product')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Product', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:42:08 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:42:09 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:42:10 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 47.
+ 1 APPPATH\Controllers\Product.php(47): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:42:37 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:42:37 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:44:59 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:45:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:45:52 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:46:41 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:46:53 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:46:54 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:13 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:30 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:30 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:31 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:31 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:47:41 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:48:57 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:49:08 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:49:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:18 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:19 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:36 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:37 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:37 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:37 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:50:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 48.
+ 1 APPPATH\Controllers\Product.php(48): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:01 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:02 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:02 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:02 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:02 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:03 --> Undefined variable $i
+in APPPATH\Controllers\Product.php on line 53.
+ 1 APPPATH\Controllers\Product.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:51:50 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:54:14 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:54:15 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:54:38 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:54:39 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:54:54 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:55:29 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:55:41 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:55:42 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:56:03 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:57:42 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 54.
+ 1 APPPATH\Controllers\Product.php(54): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:57:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 54.
+ 1 APPPATH\Controllers\Product.php(54): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 09:57:47 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 54.
+ 1 APPPATH\Controllers\Product.php(54): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:08:39 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:08:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:08:55 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:37:17 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:43:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:43:45 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:45:16 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:46:58 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:47:59 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:49:06 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:49:24 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:49:47 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:50:09 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:50:15 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:50:17 --> count(): Argument #1 ($value) must be of type Countable|array, bool given
+in APPPATH\Controllers\Product.php on line 49.
+ 1 APPPATH\Controllers\Product.php(49): count(false)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:57:39 --> unserialize(): Argument #1 ($data) must be of type string, array given
+in APPPATH\Controllers\Product.php on line 69.
+ 1 APPPATH\Controllers\Product.php(69): unserialize([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:57:47 --> unserialize(): Argument #1 ($data) must be of type string, array given
+in APPPATH\Controllers\Product.php on line 69.
+ 1 APPPATH\Controllers\Product.php(69): unserialize([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:58:30 --> unserialize(): Argument #1 ($data) must be of type string, array given
+in APPPATH\Controllers\Product.php on line 69.
+ 1 APPPATH\Controllers\Product.php(69): unserialize([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 10:58:35 --> unserialize(): Argument #1 ($data) must be of type string, array given
+in APPPATH\Controllers\Product.php on line 69.
+ 1 APPPATH\Controllers\Product.php(69): unserialize([...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 12:36:32 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1724.
+ 1 SYSTEMPATH\BaseModel.php(1724): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(916): CodeIgniter\BaseModel->transformDataToArray('', 'update')
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], '')
+ 4 APPPATH\Controllers\Product.php(280): CodeIgniter\Model->update('4', '')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->update('4')
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 12:37:26 --> 4 is not a valid HTTP return status code
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 155.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(155): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidStatusCode(4)
+ 2 SYSTEMPATH\API\ResponseTrait.php(111): CodeIgniter\HTTP\Response->setStatusCode(4, '')
+ 3 APPPATH\Controllers\Product.php(198): App\Controllers\Product->respond('delete', 4)
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->update('4')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 13:01:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='active'' at line 1 in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Models->index()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-09-16 13:01:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='active'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM model where status ==\'active\'')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+ERROR - 2023-09-16 13:01:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='active'' at line 1 in C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM m...', 0)
+#1 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM m...')
+#2 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM m...')
+#3 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\app\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM m...')
+#4 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(919): App\Controllers\Models->index()
+#5 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+#6 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\public\index.php(96): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\sadhana\1\sadhana\dashboard\backend\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-09-16 13:01:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='active'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\Models.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM model where mdoel_status ==\'active\'')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Models->index()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Models))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 18:40:15 --> unlink(../public/uploads/Attachment_2023-09-16-05-54-47pm_Acer_Wallpaper_01_3840x2400.jpg): No such file or directory
+in APPPATH\Controllers\Product.php on line 227.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/Attachment_2023-09-16-05-54-47pm_Acer_Wallpaper_01_3840x2400.jpg): No such file or directory', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 227)
+ 2 APPPATH\Controllers\Product.php(227): unlink('../public/uploads/Attachment_2023-09-16-05-54-47pm_Acer_Wallpaper_01_3840x2400.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->update('12')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 13:15:43 --> Undefined variable $db
+in APPPATH\Controllers\Product.php on line 280.
+ 1 APPPATH\Controllers\Product.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 280)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->update('13')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')
+CRITICAL - 2023-09-16 13:15:46 --> Undefined variable $db
+in APPPATH\Controllers\Product.php on line 280.
+ 1 APPPATH\Controllers\Product.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\app\\Controllers\\Product.php', 280)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Product->update('13')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(96): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\sadhana\\1\\sadhana\\dashboard\\backend\\public\\index.php')

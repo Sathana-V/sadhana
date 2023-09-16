@@ -67,7 +67,7 @@
           <div class="card">
             <div class="card-image">
               <img
-                src="../dashboard/backend/public/uploads/'.$value['attachments'].'"
+                src="../backend/public/uploads/'.$value['attachments'].'"
                 alt=""
                 srcset=""
               />
@@ -218,7 +218,7 @@
 
 </div>
 <!-- End of .co
-
+C:\xampp\htdocs\sadhana\1\sadhana\github\sadhana\Main-site\products.php
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -229,7 +229,7 @@
     <script>
  function moveto(value) {
     console.log("vakue",value)
-    window.location="http://localhost/sadhana/1/sadhana/Main-site/brand.php?id="+value
+    window.location.href="description.php?id="+value
   }
  </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->

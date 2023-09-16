@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Heroku | Application Error</title>
+    <style media="screen">
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="font-size:62px">helo</p>
+    <iframe src="//www.herokucdn.com/error-pages/no-such-app.html"></iframe>
+  </body>
+  <script>
+    function  f2()
+    {
+      for(var i=0;i<3;i++)
+      {
+        setTimeout(()=>console.log(i),2000);
+      }
+    }
+    f2();
+    console.log(0.1+0.2);
+    console.log(0.1+0.2==0.3);
+
+    (function(){
+      var a=b=5;
+    })();
+    console.log(b)
+    </script>
+</html>

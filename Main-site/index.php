@@ -23,7 +23,7 @@
  <script>
  function moveto(value) {
     console.log("vakue",value)
-    window.location="http://localhost/sadhana/1/sadhana/Main-site/brand.php?id="+value
+    window.location.href="description.php?id="+value
   }
  </script>
  <header-component></header-component>
