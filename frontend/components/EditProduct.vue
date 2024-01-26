@@ -179,6 +179,11 @@
            
               </v-text-field>
           </template>
+          <template v-slot:item.pricePerPiece="{ item }">
+              <v-text-field  class="ma-2" solo  v-model="item.pricePerPiece" @click="editInput(item)">
+           
+              </v-text-field>
+          </template>
                 <template v-slot:item.price="{ item }">
               <v-text-field  class="ma-2" solo  v-model="item.price" @click="editInput(item)">
            
@@ -449,7 +454,8 @@ export default {
      headers:[],
       cmheaders: [
         { text: "Label", value: "label",sortable: false,width:10},
-        { text: "Price", value: "price",sortable: false,width:20},
+        { text: "Price Per Piece", value: "pricePerPiece", sortable: false, width: 30 },
+        { text: "Price Per Bundle", value: "price",sortable: false,width:20},
       ],
        sizeheaders: [
         { text: "Label", value: "label",sortable: false,width:10},
@@ -563,7 +569,7 @@ export default {
         this.headers=this.cmheaders
         for(var i=0;i<this.cmChart.length;i++)
         {
-          this.priceTag.push({'label':this.cmChart[i],'price':this.editItem.price[i]["'price'"]})
+          this.priceTag.push({'label':this.cmChart[i],'price':this.editItem.price[i]["'price'"], 'pricePerPiece':this.editItem.price[i]["'pricePerPiece'"] ?? 0})
         }
           let objs = this.priceTag;
           objs.sort(sorter2('label'));
@@ -673,24 +679,19 @@ export default {
       //loop to fetch images from local storage
       for (var i = 0; i < this.attachedImages.length; i++) {
         try {
-          let url = require("../../backend/public/uploads/" +
-            this.attachedImages[i]);
+          let url = "https://sadhanagarments2013.in/backend/public/uploads/" +  this.attachedImages[i];
+          let proxyUrl = "https://sadhanagarments2013.in/backend/public/uploads/index.php?url=" + encodeURIComponent(url);
 
-          //converting image to data url
-          const toDataURL = url =>
-            fetch(url)
-              .then(response => response.blob())
-              .then(
-                blob =>
-                  new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onloadend = () => resolve(reader.result);
-                    reader.onerror = reject;
-                    reader.readAsDataURL(blob);
-                  })
-              );
+          const toDataURL = proxyUrl => fetch(proxyUrl)
+  .then(response => response.blob())
+  .then(blob => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(blob);
+  }));
           let imgname = this.attachedImages[i];
-          toDataURL(url).then(dataUrl => {
+          toDataURL(proxyUrl).then(dataUrl => {
             this.preview_list.push(dataUrl);
             // console.log('name',imgname)
             var fileData = this.dataURLtoFile(dataUrl, imgname);
@@ -861,8 +862,8 @@ const response3 = await this.$axios
         {
         for (var index = 0; index < this.priceTag.length; index++) {
             data.append(`pricelist[${index}]['label']`, this.priceTag[index].label);
-            data.append(`pricelist[${index}]['price']`, this.priceTag[index].price);
             data.append(`pricelist[${index}]['agegroup']`, this.priceTag[index].agegroup);
+            data.append(`pricelist[${index}]['price']`, this.priceTag[index].price);
             
         }
         }
@@ -870,6 +871,8 @@ const response3 = await this.$axios
         {
           for (var index = 0; index < this.priceTag.length; index++) {
             data.append(`pricelist[${index}]['label']`, this.priceTag[index].label);
+            
+            data.append(`pricelist[${index}]['pricePerPiece']`, this.priceTag[index].pricePerPiece); 
             data.append(`pricelist[${index}]['price']`, this.priceTag[index].price); 
          }
         }

@@ -56,7 +56,7 @@ export default {
         if(cook!=null)
                    {
                      console.log("nonempty")
-                       window.location.href = "http://localhost:3000/"
+                       window.location.href = "https://sadhanagarments-admin.netlify.app/"
                      
                      
                    }
@@ -108,7 +108,7 @@ export default {
         var username='';
         var useremail='';
         const response = await this.$axios.post(
-            "http://localhost:8081/admin/validate",
+            "https://sadhanagarments2013.in/backend/public/admin/validate",
             data,
             {
               headers: {
@@ -139,7 +139,7 @@ export default {
                    console.log("cookie",this.getCookie("username"));
                    if(this.getCookie("username")!=' ')
                    {
-                     window.location.href = "http://localhost:3000/"
+                     window.location.href = "https://sadhanagarments-admin.netlify.app/"
                    }
                   // let datai = new FormData()
                   // datai.append('email', this.email)

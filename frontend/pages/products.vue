@@ -202,7 +202,7 @@ export default {
         if(cook==null)
                    {
                      console.log("empty")
-                        window.location.href = "http://localhost:3000/loginform"
+                        window.location.href = "https://sadhanagarments-admin.netlify.app/loginform"
                      
                      
                    }

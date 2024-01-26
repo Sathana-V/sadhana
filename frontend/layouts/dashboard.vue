@@ -146,7 +146,7 @@ export default {
 
 
 
-                        window.location.href = "http://localhost:3000/loginform"
+                        window.location.href = "https://sadhanagarments-admin.netlify.app/loginform"
                      
                      
                    }
@@ -164,7 +164,7 @@ export default {
         menu: [
         {
           icon: 'fullscreen_exit',
-          href: 'http://localhost:3000/loginform',
+          href: 'https://sadhanagarments-admin.netlify.app/loginform',
           title: 'logout'
         }
       ],
@@ -207,7 +207,7 @@ export default {
  logout(name) {   
     console.log('logout');
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-    window.location.href="http://localhost:3000/loginform";
+    window.location.href="https://sadhanagarments-admin.netlify.app/loginform";
 },
   }
 }

@@ -167,6 +167,19 @@
                 >
                 </v-text-field>
               </template>
+              <template
+                v-if="sizeType == 'cm'"
+                v-slot:item.pricePerPiece="{ item }"
+              >
+                <v-text-field
+                  class="ma-2"
+                  solo
+                  placeholder="10-15"
+                  v-model="item.pricePerPiece"
+                  @click="editInput(item)"
+                >
+                </v-text-field>
+              </template>
               <template v-slot:item.price="{ item }">
                 <v-text-field
                   class="ma-2"
@@ -435,7 +448,8 @@ export default {
     headers: [],
     cmheaders: [
       { text: "Label", value: "label", sortable: false, width: 10 },
-      { text: "Price", value: "price", sortable: false, width: 20 },
+      { text: "Price Per Piece", value: "pricePerPiece", sortable: false, width: 30 },
+      { text: "Price Per Bundle", value: "price", sortable: false, width: 20 },
     ],
     sizeheaders: [
       { text: "Label", value: "label", sortable: false, width: 10 },
@@ -554,7 +568,7 @@ export default {
         this.headers = this.cmheaders;
         for (const element of this.cmChart) {
           this.sizefinallist.push(element);
-          this.priceTag.push({ label: element, price: 0 });
+          this.priceTag.push({ label: element, price: 0, pricePerPiece: 0 });
         }
         let objs = this.priceTag;
         objs.sort(sorter2("label"));
@@ -746,13 +760,14 @@ export default {
               this.priceTag[index].label
             );
             data.append(
-              `pricelist[${index}]['price']`,
-              this.priceTag[index].price
-            );
-            data.append(
               `pricelist[${index}]['agegroup']`,
               this.priceTag[index].agegroup
             );
+            data.append(
+              `pricelist[${index}]['price']`,
+              this.priceTag[index].price
+            );
+            
           }
         } else if (this.sizeType == "cm") {
           for (var index = 0; index < this.priceTag.length; index++) {
@@ -761,11 +776,17 @@ export default {
               this.priceTag[index].label
             );
             data.append(
+              `pricelist[${index}]['pricePerPiece']`,
+              this.priceTag[index].pricePerPiece
+            );
+            data.append(
               `pricelist[${index}]['price']`,
               this.priceTag[index].price
             );
+           
           }
         }
+
         data.append("price", this.priceTag);
         data.append("sizetype", this.sizeType);
         data.append("model_name", this.model.model_name);
